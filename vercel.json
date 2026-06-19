@@ -1,7 +1,10 @@
 {
-  "rewrites": [
-    { "source": "/oura-ring", "destination": "/pages/oura-ring.html" },
-    { "source": "/la-roche-posay", "destination": "/pages/la-roche-posay.html" },
-    { "source": "/((?!pages|static|asset-manifest|favicon|logo|manifest|robots).*)", "destination": "/index.html" }
+  "routes": [
+    { "src": "/oura-ring", "dest": "/pages/oura-ring.html" },
+    { "src": "/la-roche-posay", "dest": "/pages/la-roche-posay.html" },
+    { "src": "/pages/(.*)", "dest": "/pages/$1" },
+    { "src": "/static/(.*)", "dest": "/static/$1" },
+    { "src": "/(.*\\.(js|css|ico|png|jpg|json|txt|svg|woff|woff2))", "dest": "/$1" },
+    { "src": "/(.*)", "dest": "/index.html" }
   ]
 }
