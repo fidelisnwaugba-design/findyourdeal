@@ -1,4 +1,6 @@
 {
+  "buildCommand": null,
+  "outputDirectory": ".",
   "cleanUrls": true,
   "routes": [
     { "src": "/static/(.*)", "dest": "/static/$1" },
