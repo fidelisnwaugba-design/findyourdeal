@@ -1,10 +1,10 @@
 {
+  "cleanUrls": true,
   "routes": [
-    { "src": "/oura-ring", "dest": "/pages/oura-ring.html" },
-    { "src": "/la-roche-posay", "dest": "/pages/la-roche-posay.html" },
-    { "src": "/pages/(.*)", "dest": "/pages/$1" },
     { "src": "/static/(.*)", "dest": "/static/$1" },
-    { "src": "/(.*\\.(js|css|ico|png|jpg|json|txt|svg|woff|woff2))", "dest": "/$1" },
+    { "src": "/oura-ring", "dest": "/oura-ring.html" },
+    { "src": "/la-roche-posay", "dest": "/la-roche-posay.html" },
+    { "src": "/(.*\\.(js|css|ico|png|jpg|json|txt))", "dest": "/$1" },
     { "src": "/(.*)", "dest": "/index.html" }
   ]
 }
