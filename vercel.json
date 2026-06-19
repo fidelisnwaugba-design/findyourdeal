@@ -1,0 +1,7 @@
+{
+  "rewrites": [
+    { "source": "/oura-ring", "destination": "/pages/oura-ring.html" },
+    { "source": "/la-roche-posay", "destination": "/pages/la-roche-posay.html" },
+    { "source": "/((?!pages|static|asset-manifest|favicon|logo|manifest|robots).*)", "destination": "/index.html" }
+  ]
+}
